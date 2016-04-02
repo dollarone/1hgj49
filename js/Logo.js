@@ -6,9 +6,11 @@ PlatformerGame.Logo = function(){};
 PlatformerGame.Logo.prototype = {
   create: function() {
 
-    this.scoreText = this.game.add.text(150, 100, 'In space, noone can hear you die', { fontSize: '32px', fill: '#333' });
+    this.scoreText = this.game.add.text(300, 30, 'The Distance', { fontSize: '32px', fill: '#777' });
 
-    this.scoreText = this.game.add.text(180, 500, 'Use arrowkeys to stay alive...', { fontSize: '32px', fill: '#333' });
+    this.scoreText = this.game.add.text(150, 100, 'Your car is running on fumes. How far can you go?', { fontSize: '22px', fill: '#777' });
+
+    this.scoreText = this.game.add.text(180, 500, 'Oil slicks and grass will slow you down.', { fontSize: '22px', fill: '#777' });
 
 
     //Change the background colour
@@ -168,7 +170,7 @@ PlatformerGame.Logo.prototype = {
 
     this.createTile(logo_top_x+16*1, logo_top_y+16*9, 2);
 
-    this.startLogoAnimationTimer = 200; 
+    this.startLogoAnimationTimer = 300; 
   
     this.game.input.keyboard.addCallbacks(this, this.skip, null, null);
     this.pressed = false;

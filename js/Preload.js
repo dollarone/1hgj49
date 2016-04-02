@@ -18,14 +18,11 @@ PlatformerGame.Preload.prototype = {
     this.game.load.image('road', 'assets/images/asphalt.png');
     this.game.load.image('oil', 'assets/images/oil.png');
 
-    this.game.load.spritesheet('explosion1', 'assets/images/explosion_01_strip13.png', 196, 190);
-    this.game.load.spritesheet('explosion2', 'assets/images/explosion_02_strip13.png', 205, 190);
-    this.game.load.spritesheet('explosion3', 'assets/images/explosion_03_strip13.png', 190, 190);
 
     this.game.load.audio('music', 'assets/audio/music.ogg');
 
   },
   create: function() {
-    this.state.start('Game');
+    this.state.start('Logo');
   }
 };
